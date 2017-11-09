@@ -1,12 +1,15 @@
-<div class="madlibs">
+  
   <h2>MadLibs Exercise</h2>
-<input type="text" ng-model="Noun" placeholder="Enter a name">
-<input type="text" ng-model="Verb" placeholder="Enter an verb (activity)">
-<input type="text" ng-model="Noun" placeholder="Enter a noun (place)">
-<input type="text" ng-model="Noun" placeholder="Enter an name">
-<input type="text" ng-model="Noun" placeholder="Enter a noun (thing)">
-<input type="text" ng-model="Name" placeholder="Enter the same name">
-<input type="text" ng-model="Noun" placeholder="Enter a new name">
 
-(Noun) went for a (verb) in the (noun-place). (Noun-name) found a (noun-thing). (Name) decided to take it home and name it (name).
- 
+  <body ng-app="MadLibs">
+    <div ng-controller="InputControl">
+      <input type="text" ng-model="nounName" placeholder="Enter a name">
+      <input type="text" ng-model="verbActivity" placeholder="Enter an verb (activity)">
+      <input type="text" ng-model="nounPlace" placeholder="Enter a noun (place)">
+      <input type="text" ng-model="nounName" placeholder="Enter an name">
+      <input type="text" ng-model="nounThing" placeholder="Enter a noun (thing)">
+      <input type="text" ng-model="nounName" placeholder="Enter the same name">
+      <input type="text" ng-model="nounNewname" placeholder="Enter a new name">
+      
+      <button type = "button" ng-click="getInfo(libs)"> submit </button>
+    </div>
