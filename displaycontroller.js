@@ -1,10 +1,10 @@
 var app = angular.module('MadLibs');
 app.controller('displayController', function ($scope, MadLibsFactory){
-  $scope.nounName,
-  $scope.verbActivity,
-  $scope.nounPlace,
-  $scope.nounName,
-  $scope.nounThing,
-  $scope.nounName,
-  $scope.nounNewname,
+  $scope.nounName=MadLibsFactory.nounName,
+  $scope.verbActivity=MadLibsFactory.verbActivity,
+  $scope.nounPlace=MadLibsFactory.nounPlace,
+  $scope.nounName= MadLibsFactory.nounName,
+  $scope.nounThing=MadLibsFactory.nounThing,
+  $scope.nounName=MadLibsFactory.nounName,
+  $scope.nounNewname= MadLibsFactory.NewName
 });

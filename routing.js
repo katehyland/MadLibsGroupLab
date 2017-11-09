@@ -3,11 +3,11 @@ app.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'input.html',
-      controller: 'inputController.js'
+      controller: 'inputController'
     })
     .when('/display', {
       templateUrl: 'display.html',
-      controller: 'displayController.js'
+      controller: 'displayController'
     })
 
     .otherwise({

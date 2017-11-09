@@ -1,10 +1,10 @@
 var app = angular.module('MadLibs');
-app.controller('inputController', function($scope, madLibsFactory) {
+app.controller('inputController', function($scope, MadLibsFactory) {
   $scope.getInfo = function(){
-  madLibsFactory.nounName= $scope.nounName;
-  madLibsFactory.nounName= $scope.veryActivity;
-  madLibsFactory.nounName= $scope.nounPlace;
-  madLibsFactory.nounName= $scope.nounThing;
-  madLibsFactory.nounName= $scope.nounNewName;
+  MadLibsFactory.nounName= $scope.nounName;
+  MadLibsFactory.nounName= $scope.veryActivity;
+  MadLibsFactory.nounName= $scope.nounPlace;
+  MadLibsFactory.nounName= $scope.nounThing;
+  MadLibsFactory.nounName= $scope.nounNewName;
 }
 });
