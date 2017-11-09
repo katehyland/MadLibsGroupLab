@@ -8,3 +8,6 @@ app.controller('displayController', function ($scope, MadLibsFactory){
   $scope.nounName=MadLibsFactory.nounName,
   $scope.nounNewname= MadLibsFactory.NewName
 });
+// app.controller('displayController', function($scope, MadLibsFactory) {
+//   $scope.data = MadLibsFactory.getData();
+// });
