@@ -3,7 +3,7 @@ app.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'input.html',
-      controller: 'inputController'
+      controller: 'inputController',
     })
     .when('/display', {
       templateUrl: 'display.html',
@@ -12,7 +12,7 @@ app.config(function($routeProvider, $locationProvider){
 
     .otherwise({
       template: `<h1>This page does not exist.</h1>`
-    });
+    })
   
   $locationProvider.hashPrefix('');
 });
