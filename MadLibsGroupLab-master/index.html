@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <title>Mad Libs with AngularJS! </title>
+</head>
+<body ng-app="MadLibs">
+ <nav>
+ <a href="#/">Input</a>
+ <a href="#/display">Display</a>  
+
+</nav> 
+<ng-view></ng-view>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+<script src="routing.js"></script>
+<script src="displayController.js"></script>
+<script src="inputController.js"></script>
+<script src="MadLibsFactory.js"></script>
+</body>
+
+</html>
